@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Yisong Yue's resume
+%%   - based off work by Michael DeCorte
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Kevin Berry}
+
+%this is right aligned
+\address{kevin.berry@villanova.edu}
+\address{http://kjb.homeunix.com}
+
+\begin{resume}
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+\section{\textsc{Objective}}
+A full-time software engineering position in a leading technology company.
+\section{\textsc{Education}}
+
+\textbf{Villanova University} \hfill May 2011 \\
+BS Computer Science
+\newline
+
+%%
+%% the meat of the resume starts now
+%%
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Professional}}
+
+\employer{\textbf{Google}}
+\title{}
+\location{Summer of Code - The Tor Project}
+\dates{Summer 2010}
+\begin{position}
+Developed a new database driven back-end for the Tor Metrics Portal to track
+statistics, publish data, and create visualizations for the entire Tor network.
+I also helped to create a more dynamic and interactive website. \\
+{\itshape http://metrics.torproject.org} \\
+{\itshape http://github.com/kjbbb}
+\end{position}
+
+\employer{\textbf{ESI Medical}}
+\title{Software Engineer}
+\location{Belmar, NJ}
+\dates{Summer 2009}
+\begin{position}
+Created complete registration and scheduling portal web app for administrators
+and employees for flu clinics. It is currently used by hundreds of employees to
+upload and encrypt documents, track payroll, register for times and locations.
+\\ {\itshape http://esimedical.com/vcr}
+\end{position}
+
+\employer{\textbf{Alliant Managed Services}}
+\title{Software Engineer}
+\location{Middletown, NJ}
+\dates{Fall 2010}
+\begin{position}
+Created internal web application to keep track of managed systems for their
+clients.
+\end{position}
+
+\employer{\textbf{Various Establishments}}
+\title{Bus Boy}
+\location{Jersey Shore Area}
+\dates{2004-2008}
+\begin{position}
+Bussed tables at {\itshape Hook, Line \& Sinker} and {\itshape Sea Bright Beach
+Club}. Kept the places clean and the cutomers happy.
+\end{position}
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Other Projects}}
+
+\employer{\textbf{Distributed Computing via the Browser}}
+\dates{Fall 2009}
+\begin{position}
+Created a demo and published a paper for a research class which involves
+collaboratively reverse hashing a hidden list of words by using the processing
+power of the people currently browsing the website. \\
+{\itshape http://kevinjberry.com/research}
+\end{position}
+
+\employer{\textbf{Sprite Cutter}}
+\dates{Spring 2009}
+\begin{position}
+Developed a CGI application for a software engineering class in C++ to accept an
+image file, find the discrete images and sections within it (usually a sprite
+sheet), and publish the images and vectors in a useful format. Based on the
+OpenCV image processing library. \\
+{\itshape http://github.com/kjbbb/spritecutter}
+\end{position}
+
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+\section{\textsc{Skills}}
+
+\emph{Programming Languages}: Java, C, C++, PHP, SQL, PL/SQL, Python, Ruby, R,
+Scheme, Bash, JavaScript
+
+\emph{Libraries and Tools}: Vim, Git, Subversion, ggplot2, Rserve, Apache,
+Apache Tomcat, J2EE web stuff, LaTeX, GCC, CodeIgniter, PostgreSQL, MySQL,
+Oracle, Unix Utilities, SSH, cURL
+
+\emph{Operating Systems}: Linux (various flavors), Windows, some Darwin
+
+%%
+%% Note that we're redefining the formatting
+%% We only have one row of information now, instead of two
+%%
+
+\section{\textsc{Activities}}
+
+\emph{Elected Captain Villanova Alpine Ski Team} \\
+\emph{Elected Captain Rumson Fair-Haven Cross Country Team} \\
+\emph{Elected Captain Rumson Fair-Haven Indoor Track Team} \\
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+
+%%
+%% Nothing special here, just a normal table
+%%
+
+\section{\textsc{Course Work}}
+  \begin{tabular}{lllll}
+
+  Algorithms             & \ \ & Data Structures     & \ \ & Theory of Computation \\
+  Software Engineering   & \ \ & Research Topics     & \ \ & Programming Languages \\
+  Statistics             & \ \ & Calculus            & \ \ & Discrete Structures \\
+  Databases              & \ \ & Operating Systems   & \ \ & 
+
+  \end{tabular}
+
+\end{resume}
+\end{document}
