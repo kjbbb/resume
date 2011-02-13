@@ -1,8 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 
 %% Kevin Berry's resume
-%%   - based off work by Yisong Yue and Michael DeCorte
-%%    (Template from http://www.yisongyue.com/resume/)
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -10,10 +8,10 @@
 %% The following code sets up the document formatting
 %%
 
-%this assumes that res_yy.sty is in some path
-\documentstyle[hyperref, margin, line]{res_yy}
+%this assumes that resume.cls is in some path
 
-\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+\documentclass[line,margin]{resume}
+\usepackage{graphicx}
 
 \addtolength{\oddsidemargin}{-0.45in}
 \addtolength{\voffset}{-0.30in}
@@ -39,7 +37,6 @@
 %%
 
 \begin{document}
-
 %the name in big fonts at the top of resume
 %this is left aligned
 \name{Kevin Berry}
@@ -70,12 +67,6 @@ BS Computer Science
 %%
 %% the meat of the resume starts now
 %%
-
-\begin{formatb}
-  \employer{l}\title{r}\\
-  \location{l}\dates{r}\\
-  \body\\
-\end{formatb}
 
 \section{\textsc{Professional}}
 
@@ -114,26 +105,6 @@ Created internal web application to keep track of managed systems for their
 clients. Technologies included PHP, Apache, SOAP, CodeIgniter, and JavaScript
 (jQuery).
 \end{position}
-
-%%
-%% We use the same formatting for projects as for work experience
-%% Shown below is the formatting used previously
-%%
-%%  \begin{formatb}
-%%    \employer{l}\title{r}\\
-%%    \location{l}\dates{r}\\
-%%    \body\\
-%%  \end{formatb}
-%%
-%% 
-%%  Note that \location is now being used for non-location information
-%%
-
-
-\begin{formatb}
-  \employer{l}\dates{r}\\
-  \body\\
-\end{formatb}
 
 \section{\textsc{Other Projects}}
 
@@ -181,12 +152,6 @@ Windows, OSX
 \emph{Elected Captain, Treasurer, and President of Villanova Alpine Ski Team} \\
 \emph{Elected Captain Rumson Fair-Haven Cross Country Team} \\
 \emph{Elected Captain Rumson Fair-Haven Indoor Track Team} \\
-
-\begin{formatb}
-  \employer{l}\dates{r}\\
-  \body\\
-\end{formatb}
-
 
 %%
 %% Nothing special here, just a normal table
