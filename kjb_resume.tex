@@ -37,6 +37,12 @@
 %%
 
 \begin{document}
+
+\begin{format}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{format}
 %the name in big fonts at the top of resume
 %this is left aligned
 \name{Kevin Berry}
@@ -71,22 +77,23 @@ BS Computer Science
 \section{\textsc{Professional}}
 
 \employer{\textbf{Google}}
-\title{}
-\location{Summer of Code - The Tor Project}
-\dates{Summer 2010}
+\title{\emph{Software Engineer}}
+\location{\emph{Summer of Code - The Tor Project}}
+\dates{\emph{Summer 2010}}
 \begin{position}
-Successfully developed a new database driven back-end for the Tor Metrics Portal
-to track statistics, publish data, and create visualizations for the entire Tor
-network.  I also helped to create a more dynamic and interactive website. The
-technologies included PostgreSQL, GNU R, ggplot2, Apache Tomcat, and Java J2EE. \\
-{\itshape http://metrics.torproject.org} \\ {\itshape
-http://github.com/kjbbb/metrics-web, http://github.com/kjbbb/metrics-db}
+Successfully participated in Google's open-source student program to develop a
+database driven back-end for the Tor Metrics Portal to track statistics, publish
+data, and create visualizations for the entire Tor network. I also helped to
+create a more dynamic and interactive website. The technologies included
+PostgreSQL, GNU R, ggplot2, Apache Tomcat, and Java J2EE.\\
+\emph{http://metrics.torproject.org} \\
+\emph{http://github.com/kjbbb/metrics-web, http://github.com/kjbbb/metrics-db}
 \end{position}
 
 \employer{\textbf{ESI Medical}}
-\title{Software Engineer}
-\location{Belmar, NJ}
-\dates{Summer 2009}
+\title{\textit{Software Engineer}}
+\location{\textit{Belmar, NJ}}
+\dates{\textit{Summer 2009}}
 \begin{position}
 Created complete registration and scheduling portal web app for administrators
 and employees for flu clinics. It is currently used by hundreds of employees to
@@ -97,9 +104,9 @@ Javascript (jQuery).
 \end{position}
 
 \employer{\textbf{Alliant Managed Services}}
-\title{Software Engineer}
-\location{Morristown, NJ}
-\dates{Fall 2010}
+\title{\textit{Software Engineer}}
+\location{\textit{Morristown, NJ}}
+\dates{\textit{Fall 2010}}
 \begin{position}
 Created internal web application to keep track of managed systems for their
 clients. Technologies included PHP, Apache, SOAP, CodeIgniter, and JavaScript
@@ -108,16 +115,21 @@ clients. Technologies included PHP, Apache, SOAP, CodeIgniter, and JavaScript
 
 \section{\textsc{Other Projects}}
 
-\employer{\textbf{Distributed Computing via the Browser}}
-\dates{Fall 2009}
+\begin{format}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{format}
+
+\employer{\textbf{\\Distributed Computing via the Browser}}
+\dates{\textit{\\Fall 2009}}
 \begin{position}
-Created a demo and published a paper for a research class which involves
+Created a demo and published a paper for a research class which involved
 collaboratively reverse hashing a hidden list of words by using the processing
-power of the people currently browsing the website. \\
+power of the people currently browsing the website.
 \end{position}
 
 \employer{\textbf{Sprite Cutter}}
-\dates{Spring 2009}
+\dates{\textit{Spring 2009}}
 \begin{position}
 Developed an application for a software engineering class in C++ to accept an
 image file, find the discrete images and sections within it (usually a sprite
